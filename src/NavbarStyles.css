@@ -2,20 +2,24 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 70px;
+    padding: 15px 70px;
     box-sizing: border-box;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-    
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 #navbar-menu {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 50px;
     /* padding: 0px px; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
-
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -28,19 +32,36 @@
     position: relative;
 }
 
+#navbar-menu li a {
+  text-decoration: none;
+  color: #333;
+  transition: all 0.2s ease-in-out;
+  padding-bottom: 4px;
+  display: inline-block;
+}
+
 .cart-container {
     position: relative; 
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 10px;
 }
 
 .carticon {
-    padding: 0px 20px;
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display:block;
 }
 
 .count-products {
 	position: absolute;
-	top: 55%;
-	right: 0;
+	top: -5px;
+	right: -5px;
 
 	background-color: rgb(236, 5, 5);
 	color: #fff;
