@@ -24,7 +24,7 @@ Este proyecto es una tienda online que permite a los usuarios explorar productos
 | Herramienta / Librería     | Uso principal                                         |
 |----------------------------|--------------------------------------------------------|
 | **React**                  | Framework base para construir la interfaz              |
-| **React Router DOM**       | Navegación entre rutas y páginas                       |
+| **React Router**       | Navegación entre rutas y páginas                       |
 | **Firebase**               | Base de datos en la nube para almacenar productos      |
 | **React Bootstrap**        | Componentes estilizados y responsivos                  |
 | **React Toastify**         | Notificaciones amigables para el usuario               |
@@ -47,11 +47,8 @@ cd CreaTuLanding1-Rozenberg
 npm install
 ```
 
-3. **Configurá Firebase (si aplica):**
 
-> Asegurate de tener tu archivo de configuración de Firebase en el proyecto (`firebaseConfig.js` o similar) con tus credenciales.
-
-4. **Levantá el servidor de desarrollo:**
+3. **Levantá el servidor de desarrollo:**
 
 ```bash
 npm run dev
@@ -61,34 +58,22 @@ npm run dev
 
 ---
 
-## 📸 Vista previa
 
-> (Agregá capturas de pantalla de tu tienda online aquí para mostrar el diseño o flujo de usuario)
-
----
 
 ## 📂 Estructura del proyecto (simplificada)
 
 ```
 src/
-├── components/      # Componentes reutilizables (Navbar, Cards, etc.)
-├── pages/           # Vistas o pantallas principales (Home, Cart, etc.)
-├── firebase/        # Configuración y lógica de conexión a Firebase
+├── components/
+├── context/
+├── firebase/
+├── hoc/
 ├── App.jsx
 ├── main.jsx
 ```
 
 ---
 
-## 🛠️ Mejoras futuras
-
-- [ ] Autenticación de usuarios
-- [ ] Filtros por categoría o precio
-- [ ] Implementación de pagos
-- [ ] Página de contacto o formulario de compra
-- [ ] Mejorar experiencia mobile (responsive)
-
----
 
 ## 📄 Licencia
 
