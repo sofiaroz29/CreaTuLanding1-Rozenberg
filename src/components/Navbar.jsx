@@ -1,7 +1,7 @@
 import CartWidget from "./CartWidget";
 import logo from "../assets/logo.png"
 import "../NavbarStyles.css"
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 function Navbar (){
     return (
         <nav className="navbar">
@@ -11,10 +11,10 @@ function Navbar (){
             
             <div>
                 <ul id = "navbar-menu">
-                    <li><Link to = {"/category/tops"}>MUJER</Link></li>
-                    <li><Link to = {"/category/mens-shirts"}>HOMBRE</Link></li>
-                    <li><Link to = {"/category/beauty"}>BEAUTY</Link></li>
-                    <li><Link to = {"/category/womens-jewellery"}>ACCESORIOS</Link></li>
+                    <li><NavLink to = {"/category/remeras-y-tops"}>REMERAS Y TOPS</NavLink></li>
+                    <li><NavLink to = {"/category/pantalones"}>PANTALONES</NavLink></li>
+                    <li><NavLink to = {"/category/vestidos"}>VESTIDOS</NavLink></li>
+                    <li><NavLink to = {"/category/accesorios"}>ACCESORIOS</NavLink></li>
                 </ul>
             </div>
             <CartWidget />
